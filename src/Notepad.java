@@ -3,17 +3,16 @@ import java.awt.*;
 
 public class Notepad {
 
-    public static void main(String[] args) {
 
-
-
-        JPanel panel;
-        JButton button;
-        JMenuBar menu;
-        JMenu submenu;
-
-        Dimension d = new Dimension();
-        d.setSize(30, 30);
-
+    public static void main(String args[]){
+        JFrame frame = new JFrame("My First GUI");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300,300);
+        JTextPane text = new JTextPane();
+        JButton button = new JButton("Press");
+        frame.getContentPane().add(text);
+        frame.getContentPane().add(button);
+        frame.setVisible(true);
     }
 }
+
