@@ -4,11 +4,15 @@ import java.awt.*;
 public class Notepad {
 
 
+    private JTextArea text;
+    private JButton button;
+
+
     public static void main(String args[]){
-        JFrame frame = new JFrame("My First GUI");
+        JFrame frame = new JFrame("Note18pad");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300,300);
-        JTextPane text = new JTextPane();
+        JTextArea text = new JTextArea();
         JButton button = new JButton("Press");
         frame.getContentPane().add(text);
         frame.getContentPane().add(button);
